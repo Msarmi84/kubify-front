@@ -1,0 +1,29 @@
+    @import "../../../vars";
+    .display {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+        .divCard {
+            margin: 2rem 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 1rem;
+        }
+        .div {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    .card {
+        border-radius: $radius;
+        box-shadow: $shadow-light;
+        padding: 1rem;
+        background-color: rgba(38, 38, 38, 0.947);
+        color: white;
+        img {
+            width: 100%;
+            height: 200px;
+            cursor: pointer;
+        }
+    }

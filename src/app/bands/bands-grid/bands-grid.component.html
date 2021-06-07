@@ -1,0 +1,11 @@
+<div class="display">
+    <div class="div">
+        <app-searcher (filtrar)="searchBand($event)"></app-searcher>
+    </div>
+    <div class="divCard">
+        <div class="card" *ngFor="let band of bands">
+            <img [src]="band.img ? imageUrl + band.img : defaultImg" alt="" [routerLink]="['/band', band.id]">
+            <p>{{band.name}}</p>
+        </div>
+    </div>
+</div>

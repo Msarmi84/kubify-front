@@ -1,0 +1,58 @@
+@import "../../../vars";
+:host {
+    border-radius: $radius;
+    padding: 1rem;
+    box-shadow: $shadow-dark;
+    display: block;
+    .grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        grid-gap: 1rem;
+    }
+    label {
+        display: block;
+        margin-bottom: 0.3rem;
+    }
+    input {
+        display: block;
+        width: 100%;
+        border-radius: $radius;
+        border: none;
+        padding: 0.3rem 0.5rem;
+        box-shadow: 0 0 0 3px rgba($primary, 0.2);
+        &.ng-invalid.ng-touched {
+            box-shadow: 0 0 0 3px rgba(red, 0.2);
+        }
+    }
+    .form-group {
+        margin-bottom: 1rem;
+        p {
+            color: rgb(178, 239, 244);
+            font-size: 11px;
+            position: absolute;
+            margin-top: 0.3rem;
+        }
+    }
+    img {
+        max-height: 150px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    input[type="file"] {
+        display: none;
+    }
+    .flex-between {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+@media (max-width: 375px) {
+    .grid {
+        width: 100%;
+        display: none;
+    }
+}

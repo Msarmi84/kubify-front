@@ -1,0 +1,23 @@
+/* impotamos las variables globales */
+
+@import "../../../../vars";
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3vw;
+    background-color: $primary;
+    color: #fff;
+    ul {
+        list-style: none;
+        display: flex;
+    }
+    li {
+        padding: 0 0.5rem;
+        cursor: pointer;
+    }
+    img {
+        width: 60%;
+        cursor: pointer;
+    }
+}

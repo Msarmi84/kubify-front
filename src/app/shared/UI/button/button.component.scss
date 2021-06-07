@@ -1,0 +1,16 @@
+@import "../../../../vars";
+button {
+    background-color: white;
+    color: black;
+    margin-top: 0.5rem;
+    border-radius: $radius;
+    border-color: rgb(178, 239, 244);
+    font-size: 18px;
+    padding: 0.1rem 0.3rem;
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(178, 239, 244);
+        border: none;
+        color: rgb(101, 100, 100);
+    }
+}

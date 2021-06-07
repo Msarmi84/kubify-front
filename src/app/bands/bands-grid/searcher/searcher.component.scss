@@ -1,0 +1,12 @@
+.field-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .searcher {
+        color: white;
+    }
+    .btn {
+        background-color: transparent!important;
+        border: none!important;
+    }
+}

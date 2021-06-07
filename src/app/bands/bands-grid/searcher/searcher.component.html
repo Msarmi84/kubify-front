@@ -1,0 +1,8 @@
+<form class="form-container" [formGroup]="filterForm" (ngSubmit)="search()">
+    <div class="row">
+        <div class="field-element">
+            <input type="text" placeholder="search" formControlName="name">
+            <button class="btn" type="submit"><mat-icon class="searcher">search</mat-icon></button>
+        </div>
+    </div>
+</form>

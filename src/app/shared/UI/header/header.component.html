@@ -1,0 +1,12 @@
+<header>
+    <div class="div">
+        <img class="img" routerLink="/bands" src="../../../../assets/images/logo.png" alt="">
+    </div>
+    <nav>
+        <ul>
+            <li routerLink="/bands">Home</li>
+            <li *ngIf="!isLoggedIn" routerLink="/login">Login</li>
+            <li *ngIf="isLoggedIn" (click)="logout()">Logout</li>
+        </ul>
+    </nav>
+</header>

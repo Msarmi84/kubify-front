@@ -1,0 +1,26 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="grid">
+        <div class="form-group">
+            <label>Band name</label>
+            <input type="text" formControlName="name">
+            <p *ngIf="form.controls.name?.errors?.required && form.controls.name.touched">*Campo obligatorio</p>
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <input type="text" formControlName="description">
+            <p *ngIf="form.controls.description?.errors?.required && form.controls.description.touched">*Campo obligatorio</p>
+        </div>
+    </div>
+
+    <input type="file" #inputFile (change)="onImageChanged($event)">
+
+
+    <div class="flex-between">
+        <img [src]="imgPreview" alt="" (click)="inputFile.click()">
+        <app-button *ngIf="data?.id" [mat-dialog-close]="generateFormData()">Add</app-button>
+        <app-button *ngIf="!data?.id">Add</app-button>
+
+
+    </div>
+
+</form>
