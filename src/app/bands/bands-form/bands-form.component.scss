@@ -4,6 +4,7 @@
     padding: 1rem;
     box-shadow: $shadow-dark;
     display: block;
+    background: linear-gradient(rgb(107, 72, 114), rgb(100, 137, 177));
     .grid {
         width: 100%;
         display: grid;
@@ -28,7 +29,7 @@
     .form-group {
         margin-bottom: 1rem;
         p {
-            color: rgb(178, 239, 244);
+            color: rgb(100, 137, 177);
             font-size: 11px;
             position: absolute;
             margin-top: 0.3rem;

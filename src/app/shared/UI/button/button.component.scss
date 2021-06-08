@@ -4,13 +4,13 @@ button {
     color: black;
     margin-top: 0.5rem;
     border-radius: $radius;
-    border-color: rgb(178, 239, 244);
+    border-color: rgb(100, 137, 177);
     font-size: 18px;
     padding: 0.1rem 0.3rem;
     &:hover {
         cursor: pointer;
-        background-color: rgb(178, 239, 244);
+        background-color: rgb(100, 137, 177);
         border: none;
-        color: rgb(101, 100, 100);
+        color: white;
     }
 }
