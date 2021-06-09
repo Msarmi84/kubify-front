@@ -6,7 +6,7 @@
         .divCard {
             margin: 2rem 0;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 1rem;
         }
         .div {
@@ -14,7 +14,7 @@
             justify-content: flex-end;
         }
     }
-
+    
     .card {
         border-radius: $radius;
         box-shadow: $shadow-light;
@@ -25,5 +25,6 @@
             width: 100%;
             height: 200px;
             cursor: pointer;
+            object-fit: cover;
         }
     }
