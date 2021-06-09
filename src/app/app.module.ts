@@ -21,7 +21,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { BandsFormComponent } from './bands/bands-form/bands-form.component';
-import { SongsComponent } from './songs/songs.component';
 
 
 @NgModule({
@@ -37,7 +36,6 @@ import { SongsComponent } from './songs/songs.component';
     LoginComponent,
     SearcherComponent,
     BandsFormComponent,
-    SongsComponent
   ],
   imports: [
     BrowserModule,

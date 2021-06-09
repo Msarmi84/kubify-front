@@ -1,10 +1,9 @@
+import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Band } from 'src/app/models/band';
-import { Song } from 'src/app/models/song';
 import { InfoComponent } from 'src/app/shared/UI/info/info.component';
-import { SongService } from 'src/app/songs/song.service';
 import { environment } from 'src/environments/environment';
 import { BandsFormComponent } from '../bands-form/bands-form.component';
 import { BandsService } from '../bands-grid/bands.service';
@@ -21,8 +20,8 @@ export class BandSingleComponent implements OnInit {
   defaultImage = 'assets/images/img.jpg';
   isLoggedIn = false;
   disableClose: boolean | undefined;
-  songs: Song[];
   id: number;
+
 
 
   constructor(
@@ -30,7 +29,6 @@ export class BandSingleComponent implements OnInit {
     private route: ActivatedRoute,
     private bandsService: BandsService,
     private dialog: MatDialog,
-    private songService: SongService,
   ) { }
 
   ngOnInit(): void {
@@ -71,19 +69,5 @@ export class BandSingleComponent implements OnInit {
         .subscribe(updatedBand => this.band = updatedBand);
     });
   }
-  // getSongs(id: number): void {
-  //   this.songService.getSongsByUserId(id).subscribe((x) => {
-  //     this.songs = x;
-  //     for(let i=0; i<this.songs.length; i++) {
-  //       this.songs.push(this.songs[i]);
-  //     }
-  //   });
-
-  // }
-
-
-
-
-
 
 }

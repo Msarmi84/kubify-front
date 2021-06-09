@@ -12,13 +12,24 @@
     </div>
 </ng-container>
 
-<ng-container *ngFor="let song of songs">
-    <p>{{ song.name }}</p>
-    <div class="grid">
-        <!-- <img [src]="band.img ? imageUrl + band.img : defaultImage" [alt]="band.name">
-        <div class="content">
-            <p>{{ band.description }}</p>
-        </div> -->
-    </div>
+<ng-container *ngIf="band">
 
+    <div class="gridVideo">
+        <video *ngIf="band.id === 1" src="../../../assets/video/the-rollings.mp4" controls muted></video>
+        <video *ngIf="band.id === 1" src="../../../assets/video/the-rollings1.mp4" controls muted></video>
+        <video *ngIf="band.id === 2" src="../../../assets/video/Led Zeppelin-video.mp4" controls muted></video>
+        <video *ngIf="band.id === 2" src="../../../assets/video/Led Zeppelin-video2.mp4" controls muted></video>
+        <video *ngIf="band.id === 3" src="../../../assets/video/Queen-video1.mp4" controls muted></video>
+        <video *ngIf="band.id === 3" src="../../../assets/video/Queen-video2.mp4" controls muted></video>
+        <video *ngIf="band.id === 4" src="../../../assets/video/Pink Floyd -video1.mp4" controls muted></video>
+        <video *ngIf="band.id === 4" src="../../../assets/video/Pink Floyd-video2.mp4" controls muted></video>
+        <video *ngIf="band.id === 5" src="../../../assets/video/Deep Purple-video1.mp4" controls muted></video>
+        <video *ngIf="band.id === 5" src="../../../assets/video/Deep Purple-video2.mp4" controls muted></video>
+        <video *ngIf="band.id === 6" src="../../../assets/video/ac:dc-video2.mp4" controls muted></video>
+        <video *ngIf="band.id === 6" src="../../../assets/video/ac:dc-video1.mp4" controls muted></video>
+        <video *ngIf="band.id === 7" src="../../../assets/video/Ramones-video1.mp4" controls muted></video>
+        <video *ngIf="band.id === 7" src="../../../assets/video/Ramones-video2.mp4" controls muted></video>
+        <video *ngIf="band.id === 8" src="../../../assets/video/kiss-video1.mp4" controls muted></video>
+        <video *ngIf="band.id === 8" src="../../../assets/video/kiss-video2.mp4" controls muted></video>
+    </div>
 </ng-container>

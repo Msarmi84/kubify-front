@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BandsService } from './bands-grid/bands.service';
 import { Band } from 'src/app/models/band';
-import { Song } from '../models/song';
-import { SongService } from '../songs/song.service';
 
 
 @Component({

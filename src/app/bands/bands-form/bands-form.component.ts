@@ -40,6 +40,7 @@ export class BandsFormComponent implements OnInit {
     const formData = this.generateFormData();
     this.form.reset();
     this.imgPreview = 'assets/images/img.jpg';
+    console.log(this.form);
     this.formSubmitted.emit(formData);
   }
 
