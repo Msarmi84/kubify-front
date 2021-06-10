@@ -32,3 +32,11 @@
         }
     }
 }
+
+@media (max-width: 375px) {
+     :host {
+        form {
+            width: 70%;
+        }
+    }
+}

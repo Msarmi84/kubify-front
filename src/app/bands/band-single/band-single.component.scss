@@ -9,13 +9,6 @@
         gap: 2rem;
         align-items: center;
     }
-    .gridVideo {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        gap: 2rem;
-        align-items: center;
-        margin-top: 3rem;
-    }
     p {
         line-height: 2rem;
     }
@@ -24,6 +17,13 @@
     }
     app-button:first-of-type {
         margin-right: 0.5rem;
+    }
+    .gridVideo {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2rem;
+        align-items: center;
+        margin-top: 3rem;
     }
 }
 
@@ -36,6 +36,13 @@
         .div {
             display: flex;
             justify-content: center;
+        }
+    }
+    .gridVideo {
+        display: flex!important;
+        flex-direction: column;
+        video {
+            width: 80%;
         }
     }
 }
